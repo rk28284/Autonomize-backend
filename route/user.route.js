@@ -11,6 +11,7 @@ const router = express.Router();
 router.get('/test', (req, res) => {
   res.send('Testing Routes');
 });
+//routes
 router.post('/save', fetchAndSaveUser); // Save user data from GitHub API
 router.post('/friends/:username', findMutualFriends); // Find mutual friends
 router.get('/search', searchUsers); // Search users
